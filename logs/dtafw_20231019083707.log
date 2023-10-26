@@ -1,0 +1,18 @@
+2023-10-19 08:37:18,155 - paramiko.transport - DEBUG - starting thread (client mode): 0x19af7400
+2023-10-19 08:37:18,155 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.8.1
+2023-10-19 08:37:18,226 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_7.4
+2023-10-19 08:37:18,226 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.4)
+2023-10-19 08:37:18,254 - paramiko.transport - DEBUG - kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group16-sha512', 'diffie-hellman-group18-sha512', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha256', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'rsa-sha2-512', 'rsa-sha2-256', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr'] client mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] server mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2023-10-19 08:37:18,256 - paramiko.transport - DEBUG - Kex agreed: curve25519-sha256@libssh.org
+2023-10-19 08:37:18,256 - paramiko.transport - DEBUG - HostKey agreed: ssh-ed25519
+2023-10-19 08:37:18,256 - paramiko.transport - DEBUG - Cipher agreed: aes128-ctr
+2023-10-19 08:37:18,256 - paramiko.transport - DEBUG - MAC agreed: hmac-sha2-256
+2023-10-19 08:37:18,256 - paramiko.transport - DEBUG - Compression agreed: none
+2023-10-19 08:37:18,306 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-10-19 08:37:18,306 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-10-19 08:37:18,306 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for jhbpsr000001015: b'ad9ffb822b52af1407a8bd58335207a2'
+2023-10-19 08:37:18,375 - paramiko.transport - DEBUG - Trying discovered key b'eff59cb42d100a71f0f9302a17f9fcd4' in C:\Users\abamawa/.ssh/id_rsa
+2023-10-19 08:37:18,437 - paramiko.transport - DEBUG - userauth is OK
+2023-10-19 08:37:18,490 - paramiko.transport - INFO - Authentication (publickey) failed.
+2023-10-19 08:37:18,537 - paramiko.transport - DEBUG - userauth is OK
+2023-10-19 08:37:19,825 - paramiko.transport - DEBUG - EOF in transport thread

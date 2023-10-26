@@ -1,0 +1,1 @@
+Select * from absa.csm_score_level0_monthly where information_date between '13Apr2009' and '19Apr2009'

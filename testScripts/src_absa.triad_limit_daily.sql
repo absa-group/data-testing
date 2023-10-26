@@ -1,0 +1,1 @@
+Select * from absa.triad_limit_daily where information_date between '31Mar2009' and '20Apr2009'

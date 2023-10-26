@@ -1,0 +1,216 @@
+2023-10-19 08:47:17,321 - paramiko.transport - DEBUG - starting thread (client mode): 0x6afeaa30
+2023-10-19 08:47:17,321 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.8.1
+2023-10-19 08:47:17,399 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_7.4
+2023-10-19 08:47:17,399 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_7.4)
+2023-10-19 08:47:17,399 - paramiko.transport - DEBUG - kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group16-sha512', 'diffie-hellman-group18-sha512', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha256', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa', 'rsa-sha2-512', 'rsa-sha2-256', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr'] client mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] server mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2023-10-19 08:47:17,399 - paramiko.transport - DEBUG - Kex agreed: curve25519-sha256@libssh.org
+2023-10-19 08:47:17,399 - paramiko.transport - DEBUG - HostKey agreed: ssh-ed25519
+2023-10-19 08:47:17,399 - paramiko.transport - DEBUG - Cipher agreed: aes128-ctr
+2023-10-19 08:47:17,399 - paramiko.transport - DEBUG - MAC agreed: hmac-sha2-256
+2023-10-19 08:47:17,399 - paramiko.transport - DEBUG - Compression agreed: none
+2023-10-19 08:47:17,452 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-10-19 08:47:17,468 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-10-19 08:47:17,468 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for hdpsftp1015.270.prod.intra.absa.africa: b'bda2d302b4c08f7cd3c167638b0e97bf'
+2023-10-19 08:47:17,499 - paramiko.transport - DEBUG - Trying discovered key b'eff59cb42d100a71f0f9302a17f9fcd4' in C:\Users\abamawa/.ssh/id_rsa
+2023-10-19 08:47:17,552 - paramiko.transport - DEBUG - userauth is OK
+2023-10-19 08:47:17,653 - paramiko.transport - INFO - Authentication (publickey) failed.
+2023-10-19 08:47:17,700 - paramiko.transport - DEBUG - userauth is OK
+2023-10-19 08:47:20,622 - paramiko.transport - INFO - Authentication (password) successful!
+2023-10-19 08:47:20,622 - root - INFO - Non-Partitioned:- Test Skipped -->absa.csm_score_level0_monthly
+2023-10-19 08:47:20,660 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-10-19 08:47:20,706 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-10-19 08:47:20,706 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-10-19 08:47:20,901 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-10-19 08:47:20,901 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-10-19 08:47:20,960 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-10-19 08:47:21,007 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-10-19 08:47:21,007 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'/home/abamawa/test_scripts/src_absa.triad_limit_daily.sql', 'wb')
+2023-10-19 08:47:21,060 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'/home/abamawa/test_scripts/src_absa.triad_limit_daily.sql', 'wb') -> 00000000
+2023-10-19 08:47:21,060 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-10-19 08:47:21,161 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'/home/abamawa/test_scripts/src_absa.triad_limit_daily.sql')
+2023-10-19 08:47:21,223 - root - INFO - Copying none-partitioned test scripts to the test_scripts directory in hadoop...
+2023-10-19 08:47:21,223 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.triad_limit_daily.sql', 'wb')
+2023-10-19 08:47:21,276 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.triad_limit_daily.sql', 'wb') -> 00000000
+2023-10-19 08:47:21,276 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-10-19 08:47:21,392 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.triad_limit_daily.sql')
+2023-10-19 08:47:21,430 - root - INFO - Copying none-partitioned test scripts to the test_scripts directory in hadoop...
+2023-10-19 08:47:21,430 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-10-19 08:47:21,430 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-10-19 08:47:21,430 - paramiko.transport - DEBUG - [chan 1] Max packet in: 32768 bytes
+2023-10-19 08:47:21,477 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
+2023-10-19 08:47:21,531 - paramiko.transport - DEBUG - [chan 1] Max packet out: 32768 bytes
+2023-10-19 08:47:21,531 - paramiko.transport - DEBUG - Secsh channel 1 opened.
+2023-10-19 08:47:21,578 - paramiko.transport - DEBUG - [chan 1] Sesch channel 1 request ok
+2023-10-19 08:47:21,646 - paramiko.transport.sftp - INFO - [chan 1] Opened sftp connection (server version 3)
+2023-10-19 08:47:21,709 - root - INFO - Copying partitioned test scripts to the test_scripts directory in hadoop...
+2023-10-19 08:47:21,724 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-0w.sql', 'wb')
+2023-10-19 08:47:21,778 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-0w.sql', 'wb') -> 00000000
+2023-10-19 08:47:21,778 - paramiko.transport.sftp - DEBUG - [chan 1] close(00000000)
+2023-10-19 08:47:21,862 - paramiko.transport.sftp - DEBUG - [chan 1] stat(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-0w.sql')
+2023-10-19 08:47:21,909 - root - INFO - Copying partitioned test scripts to the test_scripts directory in hadoop...
+2023-10-19 08:47:21,909 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-0w.sql', 'wb')
+2023-10-19 08:47:21,963 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-0w.sql', 'wb') -> 00000000
+2023-10-19 08:47:21,978 - paramiko.transport.sftp - DEBUG - [chan 1] close(00000000)
+2023-10-19 08:47:22,062 - paramiko.transport.sftp - DEBUG - [chan 1] stat(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-0w.sql')
+2023-10-19 08:47:22,109 - root - INFO - Copying partitioned test scripts to the test_scripts directory in hadoop...
+2023-10-19 08:47:22,125 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-1w.sql', 'wb')
+2023-10-19 08:47:22,171 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-1w.sql', 'wb') -> 00000000
+2023-10-19 08:47:22,171 - paramiko.transport.sftp - DEBUG - [chan 1] close(00000000)
+2023-10-19 08:47:22,263 - paramiko.transport.sftp - DEBUG - [chan 1] stat(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-1w.sql')
+2023-10-19 08:47:22,325 - root - INFO - Copying partitioned test scripts to the test_scripts directory in hadoop...
+2023-10-19 08:47:22,325 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-1w.sql', 'wb')
+2023-10-19 08:47:22,395 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-1w.sql', 'wb') -> 00000000
+2023-10-19 08:47:22,395 - paramiko.transport.sftp - DEBUG - [chan 1] close(00000000)
+2023-10-19 08:47:22,486 - paramiko.transport.sftp - DEBUG - [chan 1] stat(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-1w.sql')
+2023-10-19 08:47:22,537 - root - INFO - Copying partitioned test scripts to the test_scripts directory in hadoop...
+2023-10-19 08:47:22,537 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-2w.sql', 'wb')
+2023-10-19 08:47:22,595 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-2w.sql', 'wb') -> 00000000
+2023-10-19 08:47:22,595 - paramiko.transport.sftp - DEBUG - [chan 1] close(00000000)
+2023-10-19 08:47:22,695 - paramiko.transport.sftp - DEBUG - [chan 1] stat(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-2w.sql')
+2023-10-19 08:47:22,738 - root - INFO - Copying partitioned test scripts to the test_scripts directory in hadoop...
+2023-10-19 08:47:22,738 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-2w.sql', 'wb')
+2023-10-19 08:47:22,786 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-2w.sql', 'wb') -> 00000000
+2023-10-19 08:47:22,786 - paramiko.transport.sftp - DEBUG - [chan 1] close(00000000)
+2023-10-19 08:47:22,886 - paramiko.transport.sftp - DEBUG - [chan 1] stat(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-2w.sql')
+2023-10-19 08:47:22,949 - root - INFO - Copying partitioned test scripts to the test_scripts directory in hadoop...
+2023-10-19 08:47:22,949 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-3w.sql', 'wb')
+2023-10-19 08:47:23,002 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-3w.sql', 'wb') -> 00000000
+2023-10-19 08:47:23,002 - paramiko.transport.sftp - DEBUG - [chan 1] close(00000000)
+2023-10-19 08:47:23,086 - paramiko.transport.sftp - DEBUG - [chan 1] stat(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-3w.sql')
+2023-10-19 08:47:23,133 - root - INFO - Copying partitioned test scripts to the test_scripts directory in hadoop...
+2023-10-19 08:47:23,133 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-3w.sql', 'wb')
+2023-10-19 08:47:23,187 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-3w.sql', 'wb') -> 00000000
+2023-10-19 08:47:23,203 - paramiko.transport.sftp - DEBUG - [chan 1] close(00000000)
+2023-10-19 08:47:23,287 - paramiko.transport.sftp - DEBUG - [chan 1] stat(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-3w.sql')
+2023-10-19 08:47:23,334 - root - INFO - Copying partitioned test scripts to the test_scripts directory in hadoop...
+2023-10-19 08:47:23,349 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-4w.sql', 'wb')
+2023-10-19 08:47:23,399 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-4w.sql', 'wb') -> 00000000
+2023-10-19 08:47:23,399 - paramiko.transport.sftp - DEBUG - [chan 1] close(00000000)
+2023-10-19 08:47:23,504 - paramiko.transport.sftp - DEBUG - [chan 1] stat(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-4w.sql')
+2023-10-19 08:47:23,551 - root - INFO - Copying partitioned test scripts to the test_scripts directory in hadoop...
+2023-10-19 08:47:23,551 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-4w.sql', 'wb')
+2023-10-19 08:47:23,611 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-4w.sql', 'wb') -> 00000000
+2023-10-19 08:47:23,611 - paramiko.transport.sftp - DEBUG - [chan 1] close(00000000)
+2023-10-19 08:47:23,701 - paramiko.transport.sftp - DEBUG - [chan 1] stat(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-4w.sql')
+2023-10-19 08:47:23,755 - root - INFO - Copying partitioned test scripts to the test_scripts directory in hadoop...
+2023-10-19 08:47:23,755 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-5w.sql', 'wb')
+2023-10-19 08:47:23,817 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-5w.sql', 'wb') -> 00000000
+2023-10-19 08:47:23,817 - paramiko.transport.sftp - DEBUG - [chan 1] close(00000000)
+2023-10-19 08:47:23,917 - paramiko.transport.sftp - DEBUG - [chan 1] stat(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-5w.sql')
+2023-10-19 08:47:23,971 - root - INFO - Copying partitioned test scripts to the test_scripts directory in hadoop...
+2023-10-19 08:47:23,971 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-5w.sql', 'wb')
+2023-10-19 08:47:24,018 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-5w.sql', 'wb') -> 00000000
+2023-10-19 08:47:24,018 - paramiko.transport.sftp - DEBUG - [chan 1] close(00000000)
+2023-10-19 08:47:24,118 - paramiko.transport.sftp - DEBUG - [chan 1] stat(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-5w.sql')
+2023-10-19 08:47:24,171 - root - INFO - Copying partitioned test scripts to the test_scripts directory in hadoop...
+2023-10-19 08:47:24,171 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-6w.sql', 'wb')
+2023-10-19 08:47:24,218 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-6w.sql', 'wb') -> 00000000
+2023-10-19 08:47:24,218 - paramiko.transport.sftp - DEBUG - [chan 1] close(00000000)
+2023-10-19 08:47:24,318 - paramiko.transport.sftp - DEBUG - [chan 1] stat(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-6w.sql')
+2023-10-19 08:47:24,393 - root - INFO - Copying partitioned test scripts to the test_scripts directory in hadoop...
+2023-10-19 08:47:24,393 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-6w.sql', 'wb')
+2023-10-19 08:47:24,441 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-6w.sql', 'wb') -> 00000000
+2023-10-19 08:47:24,441 - paramiko.transport.sftp - DEBUG - [chan 1] close(00000000)
+2023-10-19 08:47:24,541 - paramiko.transport.sftp - DEBUG - [chan 1] stat(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-6w.sql')
+2023-10-19 08:47:24,598 - root - INFO - Copying partitioned test scripts to the test_scripts directory in hadoop...
+2023-10-19 08:47:24,598 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-7w.sql', 'wb')
+2023-10-19 08:47:24,657 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-7w.sql', 'wb') -> 00000000
+2023-10-19 08:47:24,657 - paramiko.transport.sftp - DEBUG - [chan 1] close(00000000)
+2023-10-19 08:47:24,757 - paramiko.transport.sftp - DEBUG - [chan 1] stat(b'/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-7w.sql')
+2023-10-19 08:47:24,803 - root - INFO - Copying partitioned test scripts to the test_scripts directory in hadoop...
+2023-10-19 08:47:24,803 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-7w.sql', 'wb')
+2023-10-19 08:47:24,922 - paramiko.transport.sftp - DEBUG - [chan 1] open(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-7w.sql', 'wb') -> 00000000
+2023-10-19 08:47:24,922 - paramiko.transport.sftp - DEBUG - [chan 1] close(00000000)
+2023-10-19 08:47:25,035 - paramiko.transport.sftp - DEBUG - [chan 1] stat(b'/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-7w.sql')
+2023-10-19 08:47:25,088 - paramiko.transport.sftp - INFO - [chan 1] sftp session closed.
+2023-10-19 08:47:25,088 - paramiko.transport - DEBUG - [chan 1] EOF sent (1)
+2023-10-19 08:47:25,088 - paramiko.transport - DEBUG - [chan 2] Max packet in: 32768 bytes
+2023-10-19 08:47:25,141 - paramiko.transport - DEBUG - [chan 1] EOF received (1)
+2023-10-19 08:47:25,188 - paramiko.transport - DEBUG - [chan 2] Max packet out: 32768 bytes
+2023-10-19 08:47:25,188 - paramiko.transport - DEBUG - Secsh channel 2 opened.
+2023-10-19 08:47:25,242 - paramiko.transport - DEBUG - [chan 2] Sesch channel 2 request ok
+2023-10-19 08:47:25,289 - paramiko.transport - DEBUG - [chan 2] Sesch channel 2 request ok
+2023-10-19 08:47:45,934 - root - INFO - sudo su - svc-dehflza-edwz is executed
+2023-10-19 08:48:05,977 - root - INFO - kinit svc-dehflza-edwz -kt ~/svc-dehflza-edwz.keytab is executed
+2023-10-19 08:48:26,043 - root - INFO - cd /tmp/edw_test_res is executed
+2023-10-19 08:48:41,044 - root - INFO - Executing spark-submits
+2023-10-19 08:48:56,053 - root - INFO - Executing spark-submits
+2023-10-19 08:49:11,057 - root - INFO - Executing spark-submits
+2023-10-19 08:49:26,060 - root - INFO - Executing spark-submits
+2023-10-19 08:49:41,184 - root - INFO - Executing spark-submits
+2023-10-19 08:49:56,241 - root - INFO - Executing spark-submits
+2023-10-19 08:50:11,247 - root - INFO - Executing spark-submits
+2023-10-19 08:50:26,350 - root - INFO - Executing spark-submits
+2023-10-19 08:50:26,355 - root - INFO - ['/bigdata/common/conformance/spark-2.4.4/bin/spark-submit --class edwload.compareTwoTables --master yarn --conf spark.speculation=false --executor-memory 6G --conf spark.dynamicAllocation.minExecutors=6 --conf spark.dynamicAllocation.maxExecutors=8 --conf spark.sql.autoBroadcastJoinThreshold=-1 --conf spark.driver.memory=2G --conf spark.executor.memoryOverhead=2G --conf spark.sql.files.maxPartitionBytes=33554432 --conf spark.rdd.compress=true --conf spark.driver.extraJavaOptions="-Dcom.amazonaws.sdk.disableCertChecking=true" --conf spark.executor.extraJavaOptions="-Dcom.amazonaws.sdk.disableCertChecking=true" --jars /home/svc-dehdlza-edw/testprogram/denodo-vdp-jdbcdriver-8.0-ga.jar,/home/svc-dehdlza-edw/testprogram/terajdbc4.jar,/home/svc-dehdlza-edw/testprogram/postgresql-42.2.20.jar /home/svc-dehdlza-edw/testprogram/EDWDecomm-3.2.1.jar /home/svc-dehdlza-edw/testprogram/compareTwoTablesPropertiesExample.properties Full 200 0 Y N N 2 OracleEDW absa "/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-0w.sql" D hive dl_edw_absa csm_score_level0_monthly "/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-0w.sql" D . . /bigdatahdfs/project/edwz/test_manual/absa/abamawa_csm_score_level0_monthly_0w dm_edw_test.abamawa_csm_score_level0_monthly_0w abamawa abamawa_csm_score_level0_monthly_0w survey_date,sbu_desc I', '/bigdata/common/conformance/spark-2.4.4/bin/spark-submit --class edwload.compareTwoTables --master yarn --conf spark.speculation=false --executor-memory 6G --conf spark.dynamicAllocation.minExecutors=6 --conf spark.dynamicAllocation.maxExecutors=8 --conf spark.sql.autoBroadcastJoinThreshold=-1 --conf spark.driver.memory=2G --conf spark.executor.memoryOverhead=2G --conf spark.sql.files.maxPartitionBytes=33554432 --conf spark.rdd.compress=true --conf spark.driver.extraJavaOptions="-Dcom.amazonaws.sdk.disableCertChecking=true" --conf spark.executor.extraJavaOptions="-Dcom.amazonaws.sdk.disableCertChecking=true" --jars /home/svc-dehdlza-edw/testprogram/denodo-vdp-jdbcdriver-8.0-ga.jar,/home/svc-dehdlza-edw/testprogram/terajdbc4.jar,/home/svc-dehdlza-edw/testprogram/postgresql-42.2.20.jar /home/svc-dehdlza-edw/testprogram/EDWDecomm-3.2.1.jar /home/svc-dehdlza-edw/testprogram/compareTwoTablesPropertiesExample.properties Full 200 0 Y N N 2 OracleEDW absa "/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-1w.sql" D hive dl_edw_absa csm_score_level0_monthly "/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-1w.sql" D . . /bigdatahdfs/project/edwz/test_manual/absa/abamawa_csm_score_level0_monthly_1w dm_edw_test.abamawa_csm_score_level0_monthly_1w abamawa abamawa_csm_score_level0_monthly_1w survey_date,sbu_desc I', '/bigdata/common/conformance/spark-2.4.4/bin/spark-submit --class edwload.compareTwoTables --master yarn --conf spark.speculation=false --executor-memory 6G --conf spark.dynamicAllocation.minExecutors=6 --conf spark.dynamicAllocation.maxExecutors=8 --conf spark.sql.autoBroadcastJoinThreshold=-1 --conf spark.driver.memory=2G --conf spark.executor.memoryOverhead=2G --conf spark.sql.files.maxPartitionBytes=33554432 --conf spark.rdd.compress=true --conf spark.driver.extraJavaOptions="-Dcom.amazonaws.sdk.disableCertChecking=true" --conf spark.executor.extraJavaOptions="-Dcom.amazonaws.sdk.disableCertChecking=true" --jars /home/svc-dehdlza-edw/testprogram/denodo-vdp-jdbcdriver-8.0-ga.jar,/home/svc-dehdlza-edw/testprogram/terajdbc4.jar,/home/svc-dehdlza-edw/testprogram/postgresql-42.2.20.jar /home/svc-dehdlza-edw/testprogram/EDWDecomm-3.2.1.jar /home/svc-dehdlza-edw/testprogram/compareTwoTablesPropertiesExample.properties Full 200 0 Y N N 2 OracleEDW absa "/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-2w.sql" D hive dl_edw_absa csm_score_level0_monthly "/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-2w.sql" D . . /bigdatahdfs/project/edwz/test_manual/absa/abamawa_csm_score_level0_monthly_2w dm_edw_test.abamawa_csm_score_level0_monthly_2w abamawa abamawa_csm_score_level0_monthly_2w survey_date,sbu_desc I', '/bigdata/common/conformance/spark-2.4.4/bin/spark-submit --class edwload.compareTwoTables --master yarn --conf spark.speculation=false --executor-memory 6G --conf spark.dynamicAllocation.minExecutors=6 --conf spark.dynamicAllocation.maxExecutors=8 --conf spark.sql.autoBroadcastJoinThreshold=-1 --conf spark.driver.memory=2G --conf spark.executor.memoryOverhead=2G --conf spark.sql.files.maxPartitionBytes=33554432 --conf spark.rdd.compress=true --conf spark.driver.extraJavaOptions="-Dcom.amazonaws.sdk.disableCertChecking=true" --conf spark.executor.extraJavaOptions="-Dcom.amazonaws.sdk.disableCertChecking=true" --jars /home/svc-dehdlza-edw/testprogram/denodo-vdp-jdbcdriver-8.0-ga.jar,/home/svc-dehdlza-edw/testprogram/terajdbc4.jar,/home/svc-dehdlza-edw/testprogram/postgresql-42.2.20.jar /home/svc-dehdlza-edw/testprogram/EDWDecomm-3.2.1.jar /home/svc-dehdlza-edw/testprogram/compareTwoTablesPropertiesExample.properties Full 200 0 Y N N 2 OracleEDW absa "/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-3w.sql" D hive dl_edw_absa csm_score_level0_monthly "/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-3w.sql" D . . /bigdatahdfs/project/edwz/test_manual/absa/abamawa_csm_score_level0_monthly_3w dm_edw_test.abamawa_csm_score_level0_monthly_3w abamawa abamawa_csm_score_level0_monthly_3w survey_date,sbu_desc I', '/bigdata/common/conformance/spark-2.4.4/bin/spark-submit --class edwload.compareTwoTables --master yarn --conf spark.speculation=false --executor-memory 6G --conf spark.dynamicAllocation.minExecutors=6 --conf spark.dynamicAllocation.maxExecutors=8 --conf spark.sql.autoBroadcastJoinThreshold=-1 --conf spark.driver.memory=2G --conf spark.executor.memoryOverhead=2G --conf spark.sql.files.maxPartitionBytes=33554432 --conf spark.rdd.compress=true --conf spark.driver.extraJavaOptions="-Dcom.amazonaws.sdk.disableCertChecking=true" --conf spark.executor.extraJavaOptions="-Dcom.amazonaws.sdk.disableCertChecking=true" --jars /home/svc-dehdlza-edw/testprogram/denodo-vdp-jdbcdriver-8.0-ga.jar,/home/svc-dehdlza-edw/testprogram/terajdbc4.jar,/home/svc-dehdlza-edw/testprogram/postgresql-42.2.20.jar /home/svc-dehdlza-edw/testprogram/EDWDecomm-3.2.1.jar /home/svc-dehdlza-edw/testprogram/compareTwoTablesPropertiesExample.properties Full 200 0 Y N N 2 OracleEDW absa "/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-4w.sql" D hive dl_edw_absa csm_score_level0_monthly "/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-4w.sql" D . . /bigdatahdfs/project/edwz/test_manual/absa/abamawa_csm_score_level0_monthly_4w dm_edw_test.abamawa_csm_score_level0_monthly_4w abamawa abamawa_csm_score_level0_monthly_4w survey_date,sbu_desc I', '/bigdata/common/conformance/spark-2.4.4/bin/spark-submit --class edwload.compareTwoTables --master yarn --conf spark.speculation=false --executor-memory 6G --conf spark.dynamicAllocation.minExecutors=6 --conf spark.dynamicAllocation.maxExecutors=8 --conf spark.sql.autoBroadcastJoinThreshold=-1 --conf spark.driver.memory=2G --conf spark.executor.memoryOverhead=2G --conf spark.sql.files.maxPartitionBytes=33554432 --conf spark.rdd.compress=true --conf spark.driver.extraJavaOptions="-Dcom.amazonaws.sdk.disableCertChecking=true" --conf spark.executor.extraJavaOptions="-Dcom.amazonaws.sdk.disableCertChecking=true" --jars /home/svc-dehdlza-edw/testprogram/denodo-vdp-jdbcdriver-8.0-ga.jar,/home/svc-dehdlza-edw/testprogram/terajdbc4.jar,/home/svc-dehdlza-edw/testprogram/postgresql-42.2.20.jar /home/svc-dehdlza-edw/testprogram/EDWDecomm-3.2.1.jar /home/svc-dehdlza-edw/testprogram/compareTwoTablesPropertiesExample.properties Full 200 0 Y N N 2 OracleEDW absa "/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-5w.sql" D hive dl_edw_absa csm_score_level0_monthly "/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-5w.sql" D . . /bigdatahdfs/project/edwz/test_manual/absa/abamawa_csm_score_level0_monthly_5w dm_edw_test.abamawa_csm_score_level0_monthly_5w abamawa abamawa_csm_score_level0_monthly_5w survey_date,sbu_desc I', '/bigdata/common/conformance/spark-2.4.4/bin/spark-submit --class edwload.compareTwoTables --master yarn --conf spark.speculation=false --executor-memory 6G --conf spark.dynamicAllocation.minExecutors=6 --conf spark.dynamicAllocation.maxExecutors=8 --conf spark.sql.autoBroadcastJoinThreshold=-1 --conf spark.driver.memory=2G --conf spark.executor.memoryOverhead=2G --conf spark.sql.files.maxPartitionBytes=33554432 --conf spark.rdd.compress=true --conf spark.driver.extraJavaOptions="-Dcom.amazonaws.sdk.disableCertChecking=true" --conf spark.executor.extraJavaOptions="-Dcom.amazonaws.sdk.disableCertChecking=true" --jars /home/svc-dehdlza-edw/testprogram/denodo-vdp-jdbcdriver-8.0-ga.jar,/home/svc-dehdlza-edw/testprogram/terajdbc4.jar,/home/svc-dehdlza-edw/testprogram/postgresql-42.2.20.jar /home/svc-dehdlza-edw/testprogram/EDWDecomm-3.2.1.jar /home/svc-dehdlza-edw/testprogram/compareTwoTablesPropertiesExample.properties Full 200 0 Y N N 2 OracleEDW absa "/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-6w.sql" D hive dl_edw_absa csm_score_level0_monthly "/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-6w.sql" D . . /bigdatahdfs/project/edwz/test_manual/absa/abamawa_csm_score_level0_monthly_6w dm_edw_test.abamawa_csm_score_level0_monthly_6w abamawa abamawa_csm_score_level0_monthly_6w survey_date,sbu_desc I', '/bigdata/common/conformance/spark-2.4.4/bin/spark-submit --class edwload.compareTwoTables --master yarn --conf spark.speculation=false --executor-memory 6G --conf spark.dynamicAllocation.minExecutors=6 --conf spark.dynamicAllocation.maxExecutors=8 --conf spark.sql.autoBroadcastJoinThreshold=-1 --conf spark.driver.memory=2G --conf spark.executor.memoryOverhead=2G --conf spark.sql.files.maxPartitionBytes=33554432 --conf spark.rdd.compress=true --conf spark.driver.extraJavaOptions="-Dcom.amazonaws.sdk.disableCertChecking=true" --conf spark.executor.extraJavaOptions="-Dcom.amazonaws.sdk.disableCertChecking=true" --jars /home/svc-dehdlza-edw/testprogram/denodo-vdp-jdbcdriver-8.0-ga.jar,/home/svc-dehdlza-edw/testprogram/terajdbc4.jar,/home/svc-dehdlza-edw/testprogram/postgresql-42.2.20.jar /home/svc-dehdlza-edw/testprogram/EDWDecomm-3.2.1.jar /home/svc-dehdlza-edw/testprogram/compareTwoTablesPropertiesExample.properties Full 200 0 Y N N 2 OracleEDW absa "/home/abamawa/test_scripts/src_absa.csm_score_level0_monthlypart-7w.sql" D hive dl_edw_absa csm_score_level0_monthly "/home/abamawa/test_scripts/tgt_dl_edw_absa.csm_score_level0_monthlypart-7w.sql" D . . /bigdatahdfs/project/edwz/test_manual/absa/abamawa_csm_score_level0_monthly_7w dm_edw_test.abamawa_csm_score_level0_monthly_7w abamawa abamawa_csm_score_level0_monthly_7w survey_date,sbu_desc I'] is executed
+2023-10-19 08:50:41,375 - root - INFO - Executing spark-submits
+2023-10-19 08:50:41,422 - root - INFO - ['/bigdata/common/conformance/spark-2.4.4/bin/spark-submit --class edwload.compareTwoTables --master yarn --conf spark.speculation=false --executor-memory 6G --conf spark.dynamicAllocation.minExecutors=6 --conf spark.dynamicAllocation.maxExecutors=8 --conf spark.sql.autoBroadcastJoinThreshold=-1 --conf spark.driver.memory=2G --conf spark.executor.memoryOverhead=2G --conf spark.sql.files.maxPartitionBytes=33554432 --conf spark.rdd.compress=true --conf spark.driver.extraJavaOptions="-Dcom.amazonaws.sdk.disableCertChecking=true" --conf spark.executor.extraJavaOptions="-Dcom.amazonaws.sdk.disableCertChecking=true" --jars /home/svc-dehdlza-edw/testprogram/denodo-vdp-jdbcdriver-8.0-ga.jar,/home/svc-dehdlza-edw/testprogram/terajdbc4.jar,/home/svc-dehdlza-edw/testprogram/postgresql-42.2.20.jar /home/svc-dehdlza-edw/testprogram/EDWDecomm-3.2.1.jar /home/svc-dehdlza-edw/testprogram/compareTwoTablesPropertiesExample.properties Full 200 0 Y N N 2 OracleEDW absa "/home/abamawa/test_scripts/src_absa.triad_limit_daily.sql" D hive dl_edw_absa triad_limit_daily "/home/abamawa/test_scripts/tgt_dl_edw_absa.triad_limit_daily.sql" D . . /bigdatahdfs/project/edwz/test_manual/absa/abamawa_triad_limit_daily dm_edw_test.abamawa_triad_limit_daily abamawa abamawa_triad_limit_daily '] is executed
+2023-10-19 08:50:41,437 - paramiko.transport - DEBUG - [chan 3] Max packet in: 32768 bytes
+2023-10-19 08:50:41,491 - paramiko.transport - DEBUG - [chan 3] Max packet out: 32768 bytes
+2023-10-19 08:50:41,491 - paramiko.transport - DEBUG - Secsh channel 3 opened.
+2023-10-19 08:50:41,538 - paramiko.transport - DEBUG - [chan 2] EOF sent (2)
+2023-10-19 08:50:41,538 - paramiko.transport - DEBUG - [chan 3] Sesch channel 3 request ok
+2023-10-19 08:50:41,638 - paramiko.transport - DEBUG - Ignoring message for dead channel 2
+2023-10-19 08:50:41,638 - paramiko.transport - DEBUG - Ignoring message for dead channel 2
+2023-10-19 08:50:41,676 - paramiko.transport - DEBUG - [chan 3] EOF received (3)
+2023-10-19 08:50:41,692 - paramiko.transport - DEBUG - [chan 3] EOF sent (3)
+2023-10-19 08:50:41,707 - root - INFO - [47005] session has completed
+2023-10-19 08:50:46,716 - paramiko.transport - DEBUG - [chan 4] Max packet in: 32768 bytes
+2023-10-19 08:50:46,770 - paramiko.transport - DEBUG - [chan 4] Max packet out: 32768 bytes
+2023-10-19 08:50:46,770 - paramiko.transport - DEBUG - Secsh channel 4 opened.
+2023-10-19 08:50:46,817 - paramiko.transport - DEBUG - [chan 4] Sesch channel 4 request ok
+2023-10-19 08:50:47,017 - paramiko.transport - DEBUG - [chan 4] EOF received (4)
+2023-10-19 08:50:47,017 - paramiko.transport - DEBUG - [chan 4] EOF sent (4)
+2023-10-19 08:50:47,017 - root - INFO - [48423] session has completed
+2023-10-19 08:50:52,027 - paramiko.transport - DEBUG - [chan 5] Max packet in: 32768 bytes
+2023-10-19 08:50:52,065 - paramiko.transport - DEBUG - [chan 5] Max packet out: 32768 bytes
+2023-10-19 08:50:52,065 - paramiko.transport - DEBUG - Secsh channel 5 opened.
+2023-10-19 08:50:52,112 - paramiko.transport - DEBUG - [chan 5] Sesch channel 5 request ok
+2023-10-19 08:50:52,297 - paramiko.transport - DEBUG - [chan 5] EOF received (5)
+2023-10-19 08:50:52,297 - root - INFO - [49540] session has completed
+2023-10-19 08:50:52,312 - paramiko.transport - DEBUG - [chan 5] EOF sent (5)
+2023-10-19 08:50:57,301 - paramiko.transport - DEBUG - [chan 6] Max packet in: 32768 bytes
+2023-10-19 08:50:57,354 - paramiko.transport - DEBUG - [chan 6] Max packet out: 32768 bytes
+2023-10-19 08:50:57,354 - paramiko.transport - DEBUG - Secsh channel 6 opened.
+2023-10-19 08:50:57,401 - paramiko.transport - DEBUG - [chan 6] Sesch channel 6 request ok
+2023-10-19 08:50:57,532 - paramiko.transport - DEBUG - [chan 6] EOF received (6)
+2023-10-19 08:50:57,539 - root - INFO - [50697] session has completed
+2023-10-19 08:50:57,554 - paramiko.transport - DEBUG - [chan 6] EOF sent (6)
+2023-10-19 08:51:02,553 - paramiko.transport - DEBUG - [chan 7] Max packet in: 32768 bytes
+2023-10-19 08:51:02,600 - paramiko.transport - DEBUG - [chan 7] Max packet out: 32768 bytes
+2023-10-19 08:51:02,600 - paramiko.transport - DEBUG - Secsh channel 7 opened.
+2023-10-19 08:51:02,637 - paramiko.transport - DEBUG - [chan 7] Sesch channel 7 request ok
+2023-10-19 08:51:02,837 - paramiko.transport - DEBUG - [chan 7] EOF received (7)
+2023-10-19 08:51:02,837 - paramiko.transport - DEBUG - [chan 7] EOF sent (7)
+2023-10-19 08:51:02,837 - root - INFO - [51758] session is still running
+2023-10-19 08:51:07,846 - paramiko.transport - DEBUG - [chan 8] Max packet in: 32768 bytes
+2023-10-19 08:51:07,883 - paramiko.transport - DEBUG - [chan 8] Max packet out: 32768 bytes
+2023-10-19 08:51:07,883 - paramiko.transport - DEBUG - Secsh channel 8 opened.
+2023-10-19 08:51:07,930 - paramiko.transport - DEBUG - [chan 8] Sesch channel 8 request ok
+2023-10-19 08:51:08,069 - paramiko.transport - DEBUG - [chan 8] EOF received (8)
+2023-10-19 08:51:08,084 - paramiko.transport - DEBUG - [chan 8] EOF sent (8)
+2023-10-19 08:51:08,084 - root - INFO - [53528] session has completed
+2023-10-19 08:51:13,095 - paramiko.transport - DEBUG - [chan 9] Max packet in: 32768 bytes
+2023-10-19 08:51:13,149 - paramiko.transport - DEBUG - [chan 9] Max packet out: 32768 bytes
+2023-10-19 08:51:13,149 - paramiko.transport - DEBUG - Secsh channel 9 opened.
+2023-10-19 08:51:13,202 - paramiko.transport - DEBUG - [chan 9] Sesch channel 9 request ok
+2023-10-19 08:51:13,396 - paramiko.transport - DEBUG - [chan 9] EOF received (9)
+2023-10-19 08:51:13,396 - root - INFO - [55435] session is still running
+2023-10-19 08:51:13,396 - paramiko.transport - DEBUG - [chan 9] EOF sent (9)
+2023-10-19 08:51:18,407 - paramiko.transport - DEBUG - [chan 10] Max packet in: 32768 bytes
+2023-10-19 08:51:18,454 - paramiko.transport - DEBUG - [chan 10] Max packet out: 32768 bytes
+2023-10-19 08:51:18,454 - paramiko.transport - DEBUG - Secsh channel 10 opened.
+2023-10-19 08:51:18,491 - paramiko.transport - DEBUG - [chan 10] Sesch channel 10 request ok
+2023-10-19 08:51:18,623 - paramiko.transport - DEBUG - [chan 10] EOF received (10)
+2023-10-19 08:51:18,647 - root - INFO - [57704] session has completed
+2023-10-19 08:51:18,650 - paramiko.transport - DEBUG - [chan 10] EOF sent (10)
+2023-10-19 08:51:23,652 - paramiko.transport - DEBUG - [chan 11] Max packet in: 32768 bytes
+2023-10-19 08:51:23,690 - paramiko.transport - DEBUG - [chan 11] Max packet out: 32768 bytes
+2023-10-19 08:51:23,690 - paramiko.transport - DEBUG - Secsh channel 11 opened.
+2023-10-19 08:51:23,769 - paramiko.transport - DEBUG - [chan 11] Sesch channel 11 request ok
+2023-10-19 08:51:23,885 - paramiko.transport - DEBUG - [chan 11] EOF received (11)
+2023-10-19 08:51:23,885 - paramiko.transport - DEBUG - [chan 11] EOF sent (11)
+2023-10-19 08:51:23,891 - root - INFO - [59544] session has completed
+2023-10-19 08:51:28,893 - root - INFO - Polling No. 1
+2023-10-19 08:51:28,899 - root - INFO - Nothing is running - check your configs
+2023-10-19 08:51:28,899 - paramiko.transport - DEBUG - EOF in transport thread
+2023-10-19 08:51:28,899 - root - INFO - The test run has completed

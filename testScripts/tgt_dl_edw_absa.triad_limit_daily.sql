@@ -1,0 +1,1 @@
+Select * from dl_edw_absa.triad_limit_daily where information_date between '2009-03-31' and '2009-04-20'
